@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+li,
+a {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* 
+-----fonts----
+font-family: "Open Sans", sans-serif;
+font-family: 'My Riyad-Pro';
+font-family: "Open Sans", sans-serif
+ */
+
+@font-face {
+  font-family: 'My Riyad-Pro';
+  src: url('fonts/MYRIADPRO-REGULAR.OTF')format('truetype');
+}
+
+/* ---topbar css--- */
+.topbar {
+  background-color: #0872b9;
+  height: 32px;
+}
+
+.welcome-text {
+  color: #e7e7e7;
+  font-size: 20px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.icon {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.social-icon {
+  display: inline-flex;
+}
+
+.social-icon li {
+  margin-left: 25px;
+}
+
+.social-icon li a {
+  color: #e7e7e7;
+}
+
+.social-icon li a:hover {
+  color: #353535;
+  transition: all ease-in-out 0.3s;
+}
+
+/* ---topbar css--- */
+/* ---navisitionbar start---- */
+.nav-item .nav-link:hover{
+  color: #4488c3;
+}
+.nav-item .active{
+  color: #4488c3!important;
+}
+/* ---navisitionbar end---- */
+/* ----banar start---- */
+.banar-main{
+  background-image: url(Projecting/banar.jpg);
+}
+/* ----banar end---- */
