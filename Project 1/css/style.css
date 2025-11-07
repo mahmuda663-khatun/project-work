@@ -31,7 +31,7 @@ a {
 -----fonts----
 font-family: "Open Sans", sans-serif;
 font-family: 'My Riyad-Pro';
-font-family: "Open Sans", sans-serif
+font-family: "Oswald",sans-serif;
  */
 
 @font-face {
@@ -76,15 +76,237 @@ font-family: "Open Sans", sans-serif
 
 /* ---topbar css--- */
 /* ---navisitionbar start---- */
-.nav-item .nav-link:hover{
+.nav-item .nav-link:hover {
   color: #4488c3;
 }
-.nav-item .active{
-  color: #4488c3!important;
+
+.nav-item .active {
+  color: #4488c3 !important;
 }
+
 /* ---navisitionbar end---- */
 /* ----banar start---- */
-.banar-main{
-  background-image: url(Projecting/banar.jpg);
+.banar-main {
+  background-image: url(../img/banar.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.banar-overlay {
+  padding: 90px 0;
+  background-color: rgb(0, 0, 0, 0.6);
+}
+
+.bannar-content {
+  text-align: right;
+}
+
+.bannar-content h2 {
+  font-family: "Oswald",sans-serif;
+  font-weight: 700px;
+  font-size: 40px;
+  color: #ffff;
+}
+.bannar-content p {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400px;
+  font-size: 13px;
+  color: #ffff;
+  margin: 30px 0;
+}
+.button-group button{
+  padding: 10px 20px;
+  background-color: transparent;
+  border: 2px solid #ffff;
+  margin-left: 20px;
+  font-weight: 600px;
+  transition: all ease-in-out 0.3s;
+}
+.button-group button:hover{
+  background-color: #0872b9;
+  border: 2px solid #0872b9;
+  transition: all ease-in-out 0.3s;
 }
 /* ----banar end---- */
+
+/* ----common heading start---- */
+.common-heading{
+  margin: 60px 0 40px;
+  font-family: "Oswald",sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+}
+.common-heading p{
+  position: relative;
+}
+.common-heading p::before{
+  content: "";
+  height: 1px;
+  width: 47px;
+  background-color: #0872b9;
+  position: absolute;
+  bottom: 0 ;
+}
+.common-heading p::after{
+  content: "";
+  height: 1px;
+  width: 3px;
+  background-color: #0872b9;
+  position: absolute;
+  bottom: 0;
+  left: 50.2%;
+}
+.common-heading p span::before{
+  content: "";
+  height: 1px;
+  width: 2px;
+  background-color: #0872b9;
+  position: absolute;
+  bottom: 0;
+  left: 50.6%;
+}
+.common-heading p span::after{
+  content: "";
+  height: 1px;
+  width: 1px;
+  background-color: #0872b9;
+  position: absolute;
+  bottom: 0;
+  left: 51%;
+}
+
+/* ----common heading end---- */
+/* about part */
+.about-content p{
+  margin: 30px 0;
+  text-align: justify;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+}
+/* about part */
+/* service part  */
+.service-main{
+  background-color: #f1f1f1;
+  padding: 50px 30px 30px 30px;
+  transition: all ease-in-out 0.3s;
+  position: relative;
+  margin-top: 60px;
+}
+.service-main h3{
+  font-family: "Oswald",sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 18px ;
+}
+.service-main p{
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  color: #555555;
+}
+.ser-one{
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  background-color: white;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ser-two{
+  height: 75px;
+  width: 75px;
+  border-radius: 50%;
+  background-color: #f1f1f1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+   transition: all ease-in-out 0.3s;
+}
+.ser-three{
+  height: 69px;
+  width: 69px;
+  border: 3px solid white;
+  border-radius: 50%;
+  background-color:#f1f1f1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all ease-in-out 0.3s;
+}
+.service-main:hover {
+  box-shadow: -1px 0px 20px -3px rgb(0, 0, 0, 0.75) ;
+  transition: all ease-in-out 0.3s;
+}
+.service-main:hover .ser-two{
+  background-color: #5bc5f4;
+  transition: all ease-in-out 0.3s;
+}
+.service-main:hover .ser-three{
+  background-color: #5bc5f4;
+  transition: all ease-in-out 0.3s;
+}
+/* service part  */
+
+/* portfolio part */
+.portfolio-img{
+  margin-bottom: 20px;
+  position: relative;
+  overflow: hidden;
+}
+.portfolio-overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: scale(0);
+  height: 100%;
+  width: 100%;
+  background-color: rgb(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all ease-in-out 0.3s;
+
+}
+.link-shap{
+  height: 40px;
+  width: 40px;
+  background-color: #5bc5f4 ;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.portfolio-img:hover .portfolio-overlay{
+  transform: scale(1);
+  transition: all ease-in-out 0.3s;
+}
+
+/* portfolio part */
+/* team-main */
+.team-img{
+  background-color: #f1f1f1;
+}
+.team-content h3{
+  font-family: "Oswald",sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: #353535;
+  text-align: center;
+  margin-top: 5px;
+}
+.team-content p{
+  font-family: "Oswald",sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #353535;
+  text-align: center;
+  margin-top: 5px;
+}
+/* team-main */
