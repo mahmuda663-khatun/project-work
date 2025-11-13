@@ -227,7 +227,7 @@ font-family: "Oswald",sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
-   transition: all ease-in-out 0.3s;
+  transition: all ease-in-out 0.3s;
 }
 .ser-three{
   height: 69px;
@@ -292,6 +292,9 @@ font-family: "Oswald",sans-serif;
 /* team-main */
 .team-img{
   background-color: #f1f1f1;
+  position: relative;
+  overflow: hidden;
+  height: 270px;
 }
 .team-content h3{
   font-family: "Oswald",sans-serif;
@@ -309,4 +312,151 @@ font-family: "Oswald",sans-serif;
   text-align: center;
   margin-top: 5px;
 }
+.team-overlay{
+  position: absolute;
+  height: 100%;
+  width: 35%;
+  background-color: rgb(0, 0, 0, 0.6);
+  top: 0;
+  right: -100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all ease-in-out 0.3s;
+}
+.team-main:hover .team-overlay{
+  right: 0;
+  transition: all ease-in-out 0.3s;
+}
+.team-content h3{
+   transition: all ease-in-out 0.3s;
+}
+.team-main:hover .team-content h3{
+  color: #5bc5f4;
+  transition: all ease-in-out 0.3s;
+}
+.team-overlay ul li {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  border: 2px solid #f1f1f1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 15px 0;
+}
+.team-overlay ul li :hover{
+  background-color: #5bc5f4;
+  border: 2px solid #5bc5f4;
+}
+.team-overlay ul li a{
+  color:#f1f1f1 ;
+}
 /* team-main */
+/* Testimonial part  */
+.test-content {
+  background-color: #f1f1f1;
+  padding: 20px;
+  margin-top: 40px;
+  position:relative ;
+}
+.piramid{
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%,-50%) rotate(45deg);
+  height: 30px;
+  width: 30px;
+  background-color: #f1f1f1 ;
+  z-index: -1;
+}
+.test-content h3{
+font-family: "Oswald",sans-serif; 
+font-weight: 500;
+font-size:16px ;
+color: #353535;
+}
+.test-content ul{
+  display: inline-flex;
+}
+.test-content ul li i{
+  font-size: 13px;
+  color: #5bc5f4;
+}
+.test-content h4{
+  font-family: "Oswald",sans-serif;
+  font-weight: 400;
+  color: #353535;
+  font-size: 13px;
+  margin: 8px 0;
+}
+.test-content p{
+  font-family: "Oswald",sans-serif;
+  font-weight: 400;
+  color: #353535;
+  font-size: 13px;
+}
+/* Testimonial part  */
+
+/* footer part start */
+footer{
+  background-color:#353535;
+  margin-top: 60px;
+  color:#f1f1f1 ;
+  padding-bottom: 20px;
+}
+.footer-first{
+  padding-top: 20px;
+}
+.footer-first p{
+  font-size:13px ;
+  margin: 30px;
+  line-height: 32px;
+}
+.footer-coomon-heading{
+  font-family: "Oswald",sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+}
+.footer-second{
+  padding-top: 30px;
+}
+.footer-contact{
+  margin-top: 30px;
+}
+.footer-contact p{
+  font-family: "Open Sans", sans-serif;
+  font-size: 13px;
+}
+.footer-thard{
+  padding-top: 30px;
+}
+.footer-thard ul{
+  margin-top: 30px;
+
+}
+.footer-thard ul {
+  margin-bottom: 20px;
+}
+.footer-thard ul a{
+  color: #f1f1f1;
+}
+.footer-thard ul li a:hover{
+  color: #5bc5f4;
+}
+.footer-fourt{
+  padding-top: 30px;
+}
+.flickr-photo{
+  margin-top: 30px;
+}
+.footer-last{
+  padding: 10px;
+  text-align: center;
+  background-color: #555555;
+  color:#f1f1f1;
+}
+.footer-last p{
+  font-size: 13px;
+}
+/* footer part end */
